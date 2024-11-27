@@ -2,6 +2,7 @@ import App from "./App";
 import { AppRegistry, Platform } from "react-native";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+
 // import * as serviceWorker from './serviceWorker';
 
 if (Platform.OS === "web") {

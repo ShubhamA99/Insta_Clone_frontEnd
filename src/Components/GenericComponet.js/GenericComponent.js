@@ -6,7 +6,7 @@ function GenericComponent(props) {
   return (
     <>
       <NavBar />
-      {props.children}
+      <div>{props.children}</div>
     </>
   );
 }

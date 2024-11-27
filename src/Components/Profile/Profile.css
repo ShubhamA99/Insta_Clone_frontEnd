@@ -219,6 +219,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding: 4rem 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .profile::after {
@@ -373,7 +375,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 .mainBodyMargin {
   margin-left: 245px;
-  padding: 20px;
 }
 
 @media screen and (max-width: 568px) {

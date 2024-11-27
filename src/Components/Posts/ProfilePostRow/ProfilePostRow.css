@@ -1,0 +1,42 @@
+/* Add this CSS for hover effects and layout */
+.post-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-image {
+  transition: opacity 0.3s ease;
+}
+
+.post-container:hover .post-image {
+  opacity: 0.7; /* Dims the image on hover */
+}
+
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.post-container:hover .post-overlay {
+  opacity: 1; /* Shows the overlay when hovered */
+}
+
+.post-info {
+  text-align: center;
+  color: white;
+}
+
+.likes-count,
+.comments-count {
+  margin: 5px 0;
+  font-size: 1rem;
+}

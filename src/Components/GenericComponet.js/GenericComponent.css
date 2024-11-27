@@ -1,3 +1,11 @@
+:root {
+  --ig-separator: 219, 219, 219;
+}
+
+body {
+  font-family: Roboto, serif;
+}
+
 @media (max-width: 768px) {
   /* Adjust max-width to fit your needs */
   .sideBarDiv {

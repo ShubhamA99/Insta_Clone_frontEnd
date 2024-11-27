@@ -1,11 +1,3 @@
-:root {
-  --ig-separator: 219, 219, 219;
-}
-
-body {
-  font-family: Roboto, serif;
-}
-
 .sidebar {
   width: 245px;
   background-color: #ffffff;
