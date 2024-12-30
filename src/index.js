@@ -1,12 +1,17 @@
 import App from "./App";
 import { AppRegistry, Platform } from "react-native";
+import { BrowserRouter } from "react-router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 // import * as serviceWorker from './serviceWorker';
 
 if (Platform.OS === "web") {
-  AppRegistry.registerComponent("App", () => App);
+  AppRegistry.registerComponent("App", () => () => (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  ));
 
   AppRegistry.runApplication("App", {
     rootTag: document.getElementById("root"),

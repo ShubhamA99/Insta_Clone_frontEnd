@@ -4,7 +4,7 @@
 }
 
 .nav-pills .nav-link.active {
-  background-color: black; /* Remove default background */
+  background-color: #000; /* Remove default background */
   color: #000; /* Instagram blue */
   font-weight: bold;
   border-bottom: 2px solid #000; /* Add a bottom border */
@@ -12,6 +12,11 @@
 .nav-pills .nav-link {
   color: #000; /* Default tab color */
   border: none; /* Remove default border */
+}
+
+.nav-pills .nav-link:hover {
+  color: #fff;
+  background-color: #000;
 }
 
 @media screen and (max-width: 40rem) {
